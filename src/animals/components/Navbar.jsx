@@ -36,6 +36,20 @@ export const Navbar = () => {
             </div>
 
          </div>
+
+         <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end ps-3">
+                <ul className="navbar-nav ml-auto">
+                    <span className="nav-item nav-link">
+                        Abril
+                    </span>
+
+                    <button
+                        className='nav-item nav-link btn d-flex justify-content-center'>
+                           <span className="material-icons me-2">logout</span>
+                    </button>
+                </ul>
+            </div>
+
       </nav>
    )
 }
