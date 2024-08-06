@@ -1,19 +1,15 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import { MarinePage } from "../animals/pages/MarinePage";
-import { TerrestrialPage } from "../animals/pages/TerrestrialPage";
+import { Route, Routes } from "react-router-dom";
 import { LoginPage } from "../auth/pages/LoginPage";
+import { AnimalsRoutes } from "../animals/routes/AnimalsRoutes";
 
 
 export const AppRouter = () => {
    return (
       <>
          <Routes>
-            <Route path="terrestrial" element={ <TerrestrialPage /> } />
-            <Route path="marine" element={ <MarinePage /> } />
-
             <Route path="login" element={ <LoginPage /> } />
 
-            <Route path="/*" element={ <Navigate to="terrestrial" /> } />
+            <Route path="/*" element={ <AnimalsRoutes /> } />
          </Routes>
       </>
    )
