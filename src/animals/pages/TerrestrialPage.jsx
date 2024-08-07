@@ -1,5 +1,9 @@
+import { AnimalList } from "../components/AnimalList"
+
 export const TerrestrialPage = () => {
    return (
-      <div>TerrestrialPage</div>
+      <>
+         <AnimalList habitat={'Terrestre'} />
+      </>
    )
 }

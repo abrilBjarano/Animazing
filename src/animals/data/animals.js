@@ -1,4 +1,4 @@
-const animals = [
+export const animals = [
    {
        'id': 'marino-caballito',
        'name': 'Caballito de mar',

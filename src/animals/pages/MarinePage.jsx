@@ -1,5 +1,10 @@
+import { AnimalList } from "../components/AnimalList";
+
+
 export const MarinePage = () => {
    return (
-      <div>MarinePage</div>
+      <>
+         <AnimalList habitat={'Marino'} />
+      </>
    )
 }
