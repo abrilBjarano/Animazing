@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAnimalsRoutesInfo } from "../hooks/useAnimalsRoutesInfo";
 import icon from '../../assets/zoology.png';
 
@@ -6,6 +6,13 @@ import icon from '../../assets/zoology.png';
 export const Navbar = () => {
 
    const { routes, getNavLinkClass } = useAnimalsRoutesInfo();
+   const navigate = useNavigate();
+
+   const onLogout = () => {
+      navigate('/login', {
+         replace: true
+      });
+   };
 
 
    return (
@@ -44,6 +51,7 @@ export const Navbar = () => {
                     </span>
 
                     <button
+                        onClick={ onLogout }
                         className='nav-item nav-link btn d-flex justify-content-center'>
                            <span className="material-icons me-2">logout</span>
                     </button>
