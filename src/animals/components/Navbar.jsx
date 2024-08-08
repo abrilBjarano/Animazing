@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAnimalsRoutesInfo } from "../hooks/useAnimalsRoutesInfo";
-import icon from '../../assets/zoology.png';
+import icon from '/assets/zoology.png';
 
 
 export const Navbar = () => {
