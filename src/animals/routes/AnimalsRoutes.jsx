@@ -17,9 +17,9 @@ export const AnimalsRoutes = () => {
             <Route path="marine" element={ <MarinePage /> } />
 
             <Route path="search" element={ <SearchPage /> } />
-            <Route path="animal" element={ <AnimalPage /> } />
+            <Route path="animal/:id" element={ <AnimalPage /> } />
 
-            <Route path="/" element={ <Navigate to="terrestrial" /> } />
+            <Route path="/*" element={ <Navigate to="terrestrial" /> } />
          </Routes>
       </>
    )
