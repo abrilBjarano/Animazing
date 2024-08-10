@@ -31,7 +31,7 @@ export const AnimalPage = () => {
                <img
                   src={ animalImgUrl }
                   alt={ animal.name }
-                  className="img-fluid w-100 rounded"
+                  className="img-fluid w-100 rounded animate__animated animate__flipInX"
                />
             </div>
             {/* Información en pantallas pequeñas */}
@@ -51,7 +51,7 @@ export const AnimalPage = () => {
                <img
                   src={ animalImgUrl }
                   alt={ animal.name }
-                  className="img-fluid rounded"
+                  className="img-fluid rounded animate__animated animate__flipInX"
                />
             </div>
             <div className="col-md-8 col-12 d-none d-md-block">
