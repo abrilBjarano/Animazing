@@ -1,10 +1,11 @@
+import { useMemo } from "react";
 import { getAnimalsByHabitat } from "../helpers/getAnimalsByHabitat";
 import { AnimalCard } from "./AnimalCard";
 
 
 export const AnimalList = ({ habitat }) => {
 
-   const animals = getAnimalsByHabitat( habitat );
+   const animals = useMemo( () => getAnimalsByHabitat( habitat ), [ habitat ]);
 
 
    return (

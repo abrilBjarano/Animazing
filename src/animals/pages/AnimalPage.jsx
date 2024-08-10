@@ -1,12 +1,15 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getAnimalById } from "../helpers/getAnimalById";
+import { useMemo } from "react";
 
 
 export const AnimalPage = () => {
 
    const { id } = useParams();
    const navigate = useNavigate();
-   const animal = getAnimalById(id);
+
+   const animal = useMemo( () => getAnimalById( id ), [ id ]);
+
    const animalImgUrl = `/assets/animals/${ id }.jpg`;
 
 
